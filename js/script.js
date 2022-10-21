@@ -1,6 +1,6 @@
 window.onload = function() {
   const form = document.querySelector("form");
-  form.addEventListener("submit",function(event) {
+  form.onsubmit = function(event) {
     event.preventDefault();
     
     let response = document.getElementById("baddy").value;
