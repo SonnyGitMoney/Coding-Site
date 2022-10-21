@@ -3,19 +3,19 @@ window.onload = function() {
   form.onsubmit = function(event) {
     event.preventDefault();
 
-    let response = document.getElementById("animal").value;
+    let response = document.getElementById("baddy").value;
 
 
 
-    if (response === "badger") {
-      document.getElementById("badger").removeAttribute("class");
+    if (response === "one") {
+      document.getElementById("one").removeAttribute("class");
     }
-    else if (response === "lep") {
-      document.querySelector("div#lep").removeAttribute("class");
+    else if (response === "two") {
+      document.querySelector("div#two").removeAttribute("class");
     }
     
-    else if (response === "wheel") {
-      document.querySelector("div#wheel").removeAttribute("class");
+    else if (response === "three") {
+      document.querySelector("div#three").removeAttribute("class");
     }
     else {
       document.querySelector("div#missed").removeAttribute("class");
