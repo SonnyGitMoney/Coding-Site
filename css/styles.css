@@ -1,8 +1,7 @@
 .hidden {
     display: none;
 }
-.column {
+.images {
     float: left;
-    width: 33.33%;
-    padding: 5px;
+    margin: right;
 }
