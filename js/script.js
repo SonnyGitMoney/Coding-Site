@@ -1,6 +1,9 @@
 window.onload = function() {
   const form = document.querySelector("form");
+  const btn = document.getElementById('btn');
+  btn.addEventListener('click', function handleClick(event) {
   form.onsubmit = function(event) {
+    
     event.preventDefault();
     
     let response = document.getElementById("baddy").value;
@@ -18,4 +21,5 @@ window.onload = function() {
       document.querySelector("div#missed").removeAttribute("class");
     }
   };
+};
 };

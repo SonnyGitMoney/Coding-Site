@@ -5,6 +5,12 @@
     float: left;
     margin-right: 5px;
     width: 500px;
-}img {
+}
+img {
     max-width: 100%;
 }
+body {
+    padding: 50px;
+}
+
+
