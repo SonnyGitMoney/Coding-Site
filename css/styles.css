@@ -12,3 +12,8 @@ img {
 body {
     padding: 50px;
 }
+.content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    min-width: 100%;
+  }

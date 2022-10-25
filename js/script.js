@@ -1,21 +1,31 @@
-window.onload = function() {
+window.onload = function () {
   const form = document.querySelector("form");
-  form.onsubmit = function(event) {
+
+  form.onsubmit = function (event) {
     event.preventDefault();
+
+    const response = document.getElementById("questionBadass").value;
+    const answerOne = document.getElementById("answerOne");
+    const answerTwo = document.getElementById("answerTwo");
+    const answerThree = document.getElementById("answerThree");
+    const answerMissed = document.getElementById("answerMissed");
     
-    let response = document.getElementById("baddy").value;
+    answerOne.classList.add("hidden");
+    answerTwo.classList.add("hidden");
+    answerThree.classList.add("hidden");
+    answerMissed.classList.add("hidden");
 
     if (response === "1") {
-      document.getElementById("one").removeAttribute("class");
+      answerOne.removeAttribute("class");
     }
     else if (response === "2") {
-      document.querySelector("div#two").removeAttribute("class");
+      answerTwo.removeAttribute("class");
     }
     else if (response === "3") {
-      document.querySelector("div#three").removeAttribute("class");
+      answerThree.removeAttribute("class");
     }
     else {
-      document.querySelector("div#missed").removeAttribute("class");
+      answerMissed.removeAttribute("class");
     }
   };
 };
